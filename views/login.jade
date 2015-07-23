@@ -1,0 +1,17 @@
+extends layout
+block content
+    h3 Login
+    if message
+        p= message
+    form(action="/login" method="post" role="form" class="form-horizontal")
+        div(class="form-group")
+            label(class="control-label col-lg-1") Username
+            div(class="col-lg-5")
+                input(type="text" name="username" class="form-control" placeholder="username")
+        div(class="form-group")
+            label(class="control-label col-lg-1") Password
+            div(class="col-lg-5")
+                input(type="password" name="password" class="form-control" placeholder="password")
+        div(class="form-group")
+            div(class="col-lg-offset-1 col-lg-5")
+                input(type="submit" value="Submit" class="btn btn-primary")

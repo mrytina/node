@@ -1,0 +1,26 @@
+extends layout
+block content
+    h3 Register
+    if message
+        p= message
+    form(action="/register" method="post" role="form" class="form-horizontal")
+        div(class="form-group")
+            label(class="control-label col-lg-1") Username
+            div(class="col-lg-5")
+                input(type="text" name="username" class="form-control" placeholder="username")
+        div(class="form-group")
+            label(class="control-label col-lg-1") Email
+            div(class="col-lg-5")
+                input(type="text" name="email" class="form-control" placeholder="email")
+        div(class="form-group")
+            label(class="control-label col-lg-1") Password
+            div(class="col-lg-5")
+                input(type="password" name="password" class="form-control" placeholder="password")
+        div(class="form-group")
+            div(class="col-lg-offset-1 col-lg-5")
+                input(type="submit" value="Register" class="btn btn-primary")
+        div(class="form-group")
+            p(class="text-muted")
+                | Or
+                a(href="/login")  login
+                |  if you already have an account.
