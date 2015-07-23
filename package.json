@@ -1,0 +1,35 @@
+{
+  "name": "nodeframework",
+  "version": "1.0.0",
+  "description": "node framework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "framework"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.4",
+    "express": "^4.12.3",
+    "express-session": "^1.11.1",
+    "jade": "^1.9.2",
+    "mysql": "^2.6.2",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^2.1.0",
+    "socket.io": "^1.3.5"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "^2.6.5",
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.3",
+    "gulp-nodemon": "^2.0.2"
+  }
+}
