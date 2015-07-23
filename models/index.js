@@ -1,7 +1,7 @@
 var fs = require('fs'),
     path = require('path'),
     Sequelize = require('sequelize'),
-    sequelize = new Sequelize('framework', 'root', '^up&away', {
+    sequelize = new Sequelize('framework', 'root', 'whatever', {
         host: 'localhost',
         dialect: 'mysql'
     }),
